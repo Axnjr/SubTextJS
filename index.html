@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <title>SubText.JS</title>
+</head>
+
+<body>
+  <a class="logo" href="#">
+    <h3>SubTextJS</h3>
+  </a>
+  <nav>
+    <a class="menuitems" href="https://github.com/Axnjr/SubText.js/blob/main/SubTextReact.js">
+      <h3>ReactJS</h3>
+    </a>
+    <a class="menuitems" href="#docs">
+      <h3>Docs</h3>
+    </a>
+    <a class="menuitems" href="#example">
+      <h3>Example</h3>
+    </a>
+  </nav>
+  <div class="hero">
+    <h1 class="SplitedText" id="splitH1" splitType="letters" subElementTag="span" subElementClass="char"
+      text="Split&nbsp;Text"><span class="SplitedText" splitType="letters" subElementTag="span" subElementClass="char"
+        id="schar" text="Easily&nbsp;"></span></h1>
+    <p class="SplitedText" id="splitP" splitType="words" subElementTag="span" subElementClass="char"
+      text="With &nbsp; just &nbsp; one &nbsp; line &nbsp; in &nbsp; your &nbsp; Html, &nbsp; All &nbsp; functionalities &nbsp; of &nbsp; gsap &nbsp; splittext &nbsp; plugin &nbsp; for &nbsp; free &nbsp; and &nbsp; made &nbsp; more &nbsp; easy. ">
+    </p>
+  </div>
+
+  <div id="docs" class="doccon">
+    <h1 class="steps">1. Add the below cdn at the bottom of the Html file.</h1>
+    <div class="cdn">
+      <h3>"https://cdn.jsdelivr.net/gh/Axnjr/SubText.js@main/SubText.JS"</h3>
+    </div><br />
+    <h1 class="steps">2. Assign class <span>"</span>SplitedText<span>"</span> to the parent element</h1><br />
+    <div class="cdn">
+      <h3>It helps SubTextJS to identify which element has to be splited so it's <u><i>neccesary</i></u>.</h3>
+    </div><br />
+    <h1 class="steps">3. As per your need, assign the below attributes. </h1>
+    <table>
+      <tr>
+        <th>Inline Attribute</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>splitType <span>(</span>Optional<span>)</span> </td>
+        <td>Specifies the type of split of text either letters or words . Default type is letters.</td>
+      </tr>
+      <tr>
+        <td>subElementTag <span>(</span>Optional<span>)</span> </td>
+        <td>Specifies the sub element tag name like <span>"</span>span<span>"</span> , <span>"</span>div<span>"</span>,
+          etc. Default value is undefined. While using gsap for animation prefer div tags and give <span>"
+          </span>display : inline<span>-</span>block <span>"</span> property to sub element.</td>
+      </tr>
+      <tr>
+        <td>subElementClass <span>(</span>Optional<span>)</span> </td>
+        <td>Specifies the class name to be assigned to the sub element created. Default class name is null</td>
+      </tr>
+      <tr>
+        <td>text <span>(</span>Compulsory<span>)</span> </td>
+        <td>Text to be split goes in the text attribute , Instead of the element. </td>
+      </tr>
+    </table><br />
+    <img src="Screenshot 2022-10-25 113951.png" alt="">
+    <h1 class="steps"><span>4.</span> Use Html space entity to add spaces between words while using word split type.
+    </h1>
+    <img src="Screenshot 2022-10-25 123139.png" alt="">
+
+    <h1 id="example" class="steps">5. Here is a example </h1>
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="NWzWrXG" data-user="Axnjr"
+      style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/Axnjr/pen/NWzWrXG">
+          SubTextJS -- Example</a> by Yakshit Chhipa (<a href="https://codepen.io/Axnjr">@Axnjr</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/gh/Axnjr/SubText.js@main/SubText.JS"></script>
+  <script>
+    window.addEventListener("load", () => {
+      gsap.from(".char", {
+        y: 110,
+        duration: 0.5,
+        stagger: 0.1,
+        yoyo: true,
+        color: "#0ea5e9",
+      });
+      document.body.style.opacity = 1;
+    })
+  </script>
+
+</body>
+
+</html>

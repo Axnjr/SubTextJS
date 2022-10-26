@@ -1,0 +1,213 @@
+::selection {
+    background-color: #0ea5e9;
+    color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar {
+    background-color: #0ea5e9;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e4e4e4;
+    border-radius: 30vw;
+}
+
+@font-face {
+    font-family: "Nu";
+    src: url(Fontspring-DEMO-ondo-bold.otf);
+}
+
+.logo {
+    left: 4%;
+    top: 2%;
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2.2vw
+}
+
+body {
+    background-color: rgb(41, 178, 237);
+    color: #e4e4e4;
+    font-family: "Nu";
+    text-align: center;
+    opacity: 0;
+}
+
+nav {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    right: 4%;
+    top: 3vw;
+}
+
+.menuitems {
+    margin-inline: 2vw;
+    text-decoration: none;
+    color: currentColor;
+    border: 0.1vw solid currentColor;
+    border-radius: 25vw;
+    padding-inline: 1.5vw;
+    font-size: 1vw;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.menuitems:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.hero {
+    margin: auto;
+    padding-top: 20vh;
+}
+
+#splitH1 {
+    font-size: 10vw;
+    text-align: center;
+    /* margin-top: 14vw; */
+    font-weight: 100;
+    white-space: nowrap;
+}
+
+#splitP {
+    margin-top: 5vw;
+}
+
+#schar {
+    -webkit-text-stroke: 0.3vw #ffffff;
+    -webkit-text-fill-color: transparent;
+    font-family: "Nu";
+}
+
+.char {
+    display: inline-block;
+    position: relative;
+    transform: translate(0px, 0px);
+    font-family: "Nu";
+    color: white;
+}
+
+p {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.doccon {
+    text-align: center;
+    margin-top: 2rem;
+    display: inline-block;
+    width: 90%;
+    border-top: 2px solid white;
+    padding-top: 1rem;
+}
+
+.cdn {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid currentColor;
+    width: fit-content;
+    /* margin: auto; */
+    padding-inline: 2vw;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 50px;
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+img {
+    width: 70%;
+    height: 100%;
+}
+
+span {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.steps {
+    width: 90%;
+    text-align: left
+}
+
+td,
+th {
+    border: 2px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    background-color: #ffffff;
+    color: black;
+}
+
+@media(max-width:850px) {
+    nav {
+        top: 25vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .menuitems {
+        font-size: 2vw;
+        margin-inline: 4vw;
+        padding-inline: 0.6rem;
+        border-radius: 50px;
+    }
+
+    .logo {
+        top: 8%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4vw;
+    }
+
+    .doccon {
+        margin-top: 4rem;
+    }
+
+    .cdn {
+        font-size: 2vw;
+    }
+
+    .hero {
+        padding-top: 30vh;
+    }
+}
+
+@media(max-width:633px) {
+    .doccon {
+        text-align: left;
+    }
+
+    .cdn {
+        margin: unset;
+    }
+
+    .steps {
+        font-size: 4vw;
+        text-align: left;
+    }
+}
+
+@media(max-width:460px) {}
+
+@media(max-width:400px) {
+    .menuitems {
+        font-size: 2.5vw;
+    }
+
+    #splitH1 {
+        font-size: 11vw;
+    }
+
+    p {
+        font-size: 3.3vw;
+    }
+}
+
+@media(max-width:395px) {
+    p {
+        font-size: 5vw;
+        text-align: left;
+    }
+}
